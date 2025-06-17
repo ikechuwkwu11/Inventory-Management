@@ -21,14 +21,16 @@ Flask Inventory Management API is a RESTful backend application designed to hand
 All responses follow a clean JSON-based API format
 
 ## 🧰 Tech Stack
-- Layer	Technology
-- Language	Python 3.x
-- Framework	Flask
-- ORM	SQLAlchemy
-- Auth	Flask-Login + Werkzeug Security
-- Database	SQLite (easily swappable)
-- Response Format	JSON
-- File Uploads	Flask + werkzeug.utils.secure_filename
+| Layer             | Technology                              |
+| ----------------- | --------------------------------------- |
+| Language          | Python 3.x                              |
+| Backend Framework | Flask                                   |
+| ORM               | SQLAlchemy                              |
+| Authentication    | Flask-Login + Werkzeug Security         |
+| Database          | SQLite (default, easily swappable)      |
+| File Uploads      | Flask + `secure_filename` from Werkzeug |
+| Response Format   | JSON                                    |
+
 
 ## 🔐 Authentication
 - Use /register to create an account and /login to authenticate. Authentication is session-based via Flask-Login.
